@@ -71,6 +71,7 @@ const processor = unified({
 })
 
 export default defineConfig({
+  site: 'https://alainloayza.github.io'
     integrations: [react()],
     vite: {
         plugins: [tailwindcss()],
@@ -79,4 +80,3 @@ export default defineConfig({
         syntaxHighlight: false,
         processor,
     },
-})
